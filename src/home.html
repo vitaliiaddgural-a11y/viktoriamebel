@@ -1,0 +1,239 @@
+
+  {{HEADER}}
+
+  <main>
+    <!-- 1. Перший екран -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__text">
+          <h1>Дивани й ліжка від фабрики «Меблі Вікторія»</h1>
+          <p>Каталог із розмірами, спальним місцем і механізмом кожної моделі. Тканину, наповнення й шухляди підберемо під вашу кімнату.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#catalog">Переглянути каталог <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" href="#order">Отримати консультацію</a>
+          </div>
+        </div>
+        <div class="hs" id="heroSteps">
+          <div class="hs__stage">
+            <a class="hs__label" href="/mebli/spays-kut/">Кутовий диван «Спайс»</a>
+
+            <div class="hs__layer is-on" data-layer="0">
+              <figure class="dim">
+                <img src="/img/hero/spays-kut.webp" alt="Кутовий диван Спайс — Меблі Вікторія" width="1150" height="644" fetchpriority="high">
+                <div class="dim__w"><span><b data-to="2320">2320</b> мм</span></div>
+                <div class="dim__h"><span><b data-to="850">850</b> мм</span></div>
+              </figure>
+            </div>
+
+            <div class="hs__layer" data-layer="1">
+              <figure class="dim dim--photo">
+                <img src="/img/products/81_1.jpg" alt="Розкладений кутовий диван Спайс з ящиком для білизни" loading="lazy">
+                <div class="dim__w"><span><b data-to="2100">2100</b> мм</span></div>
+                <div class="dim__h"><span><b data-to="1600">1600</b> мм</span></div>
+              </figure>
+            </div>
+
+            <div class="hs__layer" data-layer="2">
+              <div class="cut" aria-label="Розріз сидіння: тканина, синтепон, повсть, пружинний блок, брус">
+                <div class="cut__row" style="--i:0"><i class="cut__band cut__band--fabric"></i><span>Тканина на вибір</span></div>
+                <div class="cut__row" style="--i:1"><i class="cut__band cut__band--fiber"></i><span>Синтепон</span></div>
+                <div class="cut__row" style="--i:2"><i class="cut__band cut__band--felt"></i><span>Повсть</span></div>
+                <div class="cut__row" style="--i:3"><i class="cut__band cut__band--spring"></i><span>Пружинний блок</span></div>
+                <div class="cut__row" style="--i:4"><i class="cut__band cut__band--wood"></i><span>Каркас із бруса</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hs__steps" role="tablist" aria-label="Кроки">
+            <button class="hs__step is-on" type="button" role="tab" aria-selected="true" data-step="0">
+              <span class="hs__num">01</span><b>Габарити</b><span class="hs__txt">850 × 1660 × 2320 мм</span>
+            </button>
+            <button class="hs__step" type="button" role="tab" aria-selected="false" data-step="1">
+              <span class="hs__num">02</span><b>Розкладання</b><span class="hs__txt">Спальне місце 2100 × 1600 мм</span>
+            </button>
+            <button class="hs__step" type="button" role="tab" aria-selected="false" data-step="2">
+              <span class="hs__num">03</span><b>Наповнення</b><span class="hs__txt">Від каркаса до тканини</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="facts">
+        <div><b>{{COUNT}}</b><span>{{COUNT_LABEL}} у каталозі</span></div>
+        <div><b>8</b><span>категорій меблів</span></div>
+        <div><b>7</b><span>механізмів трансформації</span></div>
+        <div><b>2100 × 1600</b><span>мм, найбільше спальне місце</span></div>
+      </div>
+    </div>
+
+    <!-- 2. Категорії -->
+    <section class="section" id="catalog">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Каталог за категоріями</h2>
+          <p>Від крісла-ліжка шириною 800 мм до кутового дивана на 2600 мм. У кожній моделі є розміри, спальне місце й механізм</p>
+        </div>
+        <div class="cats" id="cats">{{CATS}}</div>
+      </div>
+    </section>
+
+    <!-- 3. Хто ми -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about__media">
+          <figure class="big"><img src="/img/products/79_1.jpg" alt="Кутовий диван Мілтон" loading="lazy"></figure>
+          <figure class="sm"><img src="/img/products/69_0.jpg" alt="Ліжко Лола" loading="lazy"></figure>
+          <figure class="sm"><img src="/img/products/46_0.jpg" alt="Диван Беатріс-1" loading="lazy"></figure>
+        </div>
+        <div class="about__text">
+          <h2>Власне виробництво м'яких меблів</h2>
+          <p>Ми виготовляємо меблі від каркаса до останнього шва. Тому знаємо кожну модель зсередини й можемо змінити її під ваш дім.</p>
+          <ul class="specs-list">
+            <li><span>Каркас</span>Дерев'яний брус, ДСП, фанера, накладки з МДФ</li>
+            <li><span>Основа</span>Пружинний блок або букові ламелі</li>
+            <li><span>Зберігання</span>Ящик для білизни, ніші й шухляди в підлокітниках</li>
+            <li><span>Тканина</span>На ваш вибір, можна поєднати дві в одній моделі</li>
+          </ul>
+          <a class="btn btn--ghost" href="#how">Як ми працюємо</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Як ми працюємо -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Від вибору моделі до доставки</h2>
+          <p>Ви спілкуєтесь напряму з фабрикою, яка виготовляє ваші меблі</p>
+        </div>
+        <div class="flow" id="flowSteps">
+          <div class="flow__list" role="tablist" aria-label="Етапи роботи">
+            <button class="flow__step is-on" type="button" role="tab" data-step="0">
+              <span class="flow__num">01</span>
+              <span class="flow__body"><b>Обираєте модель</b><span>У каталозі розміри, спальне місце й механізм кожної моделі</span></span>
+            </button>
+            <button class="flow__step" type="button" role="tab" data-step="1">
+              <span class="flow__num">02</span>
+              <span class="flow__body"><b>Консультація</b><span>Менеджер допоможе з тканиною, кольором і наповненням та порахує вартість</span></span>
+            </button>
+            <button class="flow__step" type="button" role="tab" data-step="2">
+              <span class="flow__num">03</span>
+              <span class="flow__body"><b>Виготовлення</b><span>Збираємо меблі на власному виробництві у вашій комплектації</span></span>
+            </button>
+            <button class="flow__step" type="button" role="tab" data-step="3">
+              <span class="flow__num">04</span>
+              <span class="flow__body"><b>Доставка</b><span>Привозимо готові меблі до вас додому</span></span>
+            </button>
+          </div>
+
+          <div class="flow__stage">
+            <div class="flow__layer is-on" data-layer="0">
+              <div class="pick">
+                <div class="pick__card" style="--i:0"><span class="pick__img"><img src="/img/products/02_0.jpg" alt="Диван Валенсія-1" loading="lazy"></span><b>Валенсія-1</b><span>800 × 1020 × 2410</span></div>
+                <div class="pick__card is-picked" style="--i:1"><span class="pick__img"><img src="/img/products/06_0.jpg" alt="Диван Мілтон" loading="lazy"></span><b>Мілтон</b><span>770 × 1000 × 2400</span><i class="pick__check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i></div>
+                <div class="pick__card" style="--i:2"><span class="pick__img"><img src="/img/products/10_0.jpg" alt="Диван Алегро" loading="lazy"></span><b>Алегро</b><span>770 × 1000 × 2360</span></div>
+              </div>
+            </div>
+            <div class="flow__layer" data-layer="1">
+              <div class="swatches">
+                <div class="swatch" style="--c:#9aa0a8;--i:0"><i></i><span>Сірий</span></div>
+                <div class="swatch" style="--c:#55595f;--i:1"><i></i><span>Графіт</span></div>
+                <div class="swatch is-picked" style="--c:#c9b9a3;--i:2"><i></i><span>Бежевий</span></div>
+                <div class="swatch" style="--c:#2f8a95;--i:3"><i></i><span>Бірюза</span></div>
+                <div class="swatch" style="--c:#6b4a3a;--i:4"><i></i><span>Шоколад</span></div>
+                <div class="swatch" style="--c:#a52a6b;--i:5"><i></i><span>Малиновий</span></div>
+                <div class="swatch" style="--c:#3b4f7a;--i:6"><i></i><span>Синій</span></div>
+                <div class="swatch" style="--c:#8a9b5c;--i:7"><i></i><span>Оливковий</span></div>
+              </div>
+              <div class="note" style="--i:8"><span class="mono">Мілтон · бежевий</span><b>Наповнення: пружинний блок, ящик для білизни, столик у підлокітнику</b></div>
+            </div>
+            <div class="flow__layer" data-layer="2">
+              <figure class="flow__photo"><img src="/img/products/55_1.jpg" alt="Каркас із букових ламелей на виробництві" loading="lazy"></figure>
+              <ul class="build">
+                <li style="--i:0">Каркас із бруса</li>
+                <li style="--i:1">Пружинний блок</li>
+                <li style="--i:2">Пошиття чохла</li>
+                <li style="--i:3">Збирання й перевірка</li>
+              </ul>
+            </div>
+            <div class="flow__layer" data-layer="3">
+              <figure class="flow__photo"><img src="/img/products/06_0.jpg" alt="Готовий диван Мілтон" loading="lazy"></figure>
+              <div class="ready"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><div><b>Готово до доставки</b><span class="mono">Мілтон · 770 × 1000 × 2400 мм</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Форма -->
+    <section class="section">
+      <div class="wrap">{{FORM}}</div>
+    </section>
+
+    <!-- 6. Що ви отримаєте -->
+    <section class="section" id="benefits">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Деталі, які цінуєш через рік</h2>
+          <p>Те, що не видно в магазині, але помітно щодня вдома</p>
+        </div>
+        <div class="benefits">
+          <article class="benefit">
+            <div class="benefit__img"><img src="/img/products/42_1.jpg" alt="Шухляди в підлокітнику дивана Мадрид-3" loading="lazy"></div>
+            <div class="benefit__body"><h3>Шухляди в підлокітниках</h3><p>Ніші, висувні шухляди та бар для пультів, книжок і пледів</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit__img"><img src="/img/products/10_1.jpg" alt="Розкладений диван Алегро" loading="lazy"></div>
+            <div class="benefit__body"><h3>Легка трансформація</h3><p>Єврокнижка, пантограф чи дельфін розкладаються за кілька секунд</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit__img"><img src="/img/products/06_1.jpg" alt="Висувний столик дивана Мілтон" loading="lazy"></div>
+            <div class="benefit__body"><h3>Висувний столик</h3><p>У моделях «Мілтон» столик сховано в підлокітнику</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit__img"><img src="/img/products/55_1.jpg" alt="Букові ламелі крісла-ліжка Вега" loading="lazy"></div>
+            <div class="benefit__body"><h3>Ортопедичні ламелі</h3><p>Букові ламелі або пружинний блок для щоденного сну</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit__img"><img src="/img/products/70_0.jpg" alt="Ліжко з підйомним механізмом" loading="lazy"></div>
+            <div class="benefit__body"><h3>Ліжка з газліфтом</h3><p>Основа піднімається без зусиль, під нею великий ящик</p></div>
+          </article>
+          <article class="benefit">
+            <div class="benefit__img"><img src="/img/products/51_0.jpg" alt="Софа Соня у малиновій тканині" loading="lazy"></div>
+            <div class="benefit__body"><h3>Ваша тканина й колір</h3><p>Однотонно, з контрастним кантом або з подушками з іншої тканини</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Відгуки -->
+    <section class="section" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Відгуки покупців</h2>
+          <p>Що кажуть про моделі нашої фабрики</p>
+        </div>
+        <div class="greviews">{{REVIEWS}}</div>
+      </div>
+    </section>
+
+    <!-- SEO-блок -->
+    {{SEO}}
+
+    <!-- 8. Часті питання -->
+    <section class="section" id="faq">
+      <div class="wrap faq">
+        <div class="faq__side">
+          <h2>Часті питання про меблі</h2>
+          <p>Не знайшли відповіді? Зателефонуйте або залиште заявку, консультація безкоштовна</p>
+          <a class="btn btn--ghost" href="#order">Поставити питання</a>
+        </div>
+        <div class="faq__list">{{FAQ}}</div>
+      </div>
+    </section>
+  </main>
+
+  {{FOOTER}}
+

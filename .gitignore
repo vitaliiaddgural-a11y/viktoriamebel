@@ -1,0 +1,8 @@
+# Вихідний PDF-каталог (155 МБ, більше ліміту GitHub)
+*.pdf
+
+# Службові файли Claude Code
+.claude/
+skills-lock.json
+
+.DS_Store
